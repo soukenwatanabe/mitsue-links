@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.footer{
+  background: #000;
+  padding: rem(42) 0 rem(46);
+}
+.footer__inner{
+  text-align: right;
+}
+.footer__inner small{
+  font-size: rem(12);
+  @include mq("md"){
+    font-size: rem(16);
+  }
+}
+

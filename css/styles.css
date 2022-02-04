@@ -1,0 +1,652 @@
+@charset "UTF-8";
+body {
+  font-family: "";
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+/* リキッドレイアウト対応 */
+html {
+  font-size: 16px;
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 4.2666666667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.4545454545vw;
+  }
+}
+@media (min-width: 1100px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* pcの電話番号発信対応 */
+@media screen and (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+/* ホバー */
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+@media screen and (min-width: 768px) {
+  a:hover {
+    opacity: 0.8;
+  }
+}
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.approach__lists {
+  list-style: none;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .approach__lists {
+    padding-top: 2.3125rem;
+  }
+}
+
+.main__inner small {
+  color: white;
+}
+
+.approach__list-number {
+  background-color: #333333;
+  border-radius: 50%;
+  color: white;
+  padding: 3px 10px;
+  padding: 0.1875rem 0.625rem;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-right: 0.3125rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .approach__list-number {
+    font-size: 1rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.approach__ttl {
+  font-size: 20px;
+  font-size: 1.25rem;
+  border-bottom: 3px solid #B9B9B9;
+  border-bottom: 0.1875rem solid #B9B9B9;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+  padding-top: 40px;
+  padding-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .approach__ttl {
+    padding-bottom: 1.25rem;
+    padding-top: 3.0625rem;
+  }
+}
+
+.approach__description {
+  padding-top: 25px;
+  padding-top: 1.5625rem;
+  line-height: 1.7;
+}
+@media screen and (min-width: 768px) {
+  .approach__description {
+    padding-top: 1.5625rem;
+    line-height: 2;
+    padding-bottom: 1.875rem;
+  }
+}
+
+.approach__ttl p {
+  line-height: 1.6;
+}
+
+.approach__list {
+  font-size: 12px;
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .approach__list {
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+.contact__btn-red {
+  background-color: #D73635;
+  border-radius: 0.1875rem;
+  padding: 20px 70px;
+  padding: 1.25rem 4.375rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.contact__btn {
+  text-align: center;
+  padding-top: 40px;
+  padding-top: 2.5rem;
+}
+
+input[type=checkbox] {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  display: inline-block;
+}
+
+.contact-concept__lists.contact-concept__right {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .contact-concept__lists.contact-concept__right {
+    padding-left: 6.875rem;
+  }
+}
+
+.contact-concept__lists li {
+  list-style: none;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+}
+
+.checkbox {
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .checkbox {
+    padding-left: 1.0625rem;
+  }
+}
+
+p.contact-concept__must {
+  background-color: #D73635;
+  color: white;
+  font-weight: bold;
+  padding: 3px 7px;
+  padding: 0.1875rem 0.4375rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  display: inline-block;
+}
+
+.contact-concept__left {
+  width: 100%;
+  max-width: 150px;
+  max-width: 9.375rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-concept__left {
+    max-width: 19.375rem;
+    padding-left: 1.125rem;
+  }
+}
+
+.contact-concept__lists li {
+  list-style: none;
+  font-size: 12px;
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-concept__lists li {
+    padding-bottom: 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+.contact-consult__left {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .contact-consult__left {
+    padding-left: 1.125rem;
+  }
+}
+
+.contact-consult__right {
+  display: inline-block;
+}
+
+.contact-concept__left-ttl {
+  font-weight: bold;
+  font-size: 12px;
+  font-size: 0.75rem;
+  display: inline-block;
+  padding-right: 10px;
+  padding-right: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-concept__left-ttl {
+    padding-right: 5.625rem;
+    font-size: 1rem;
+  }
+}
+
+.contact-consult__right {
+  padding-left: 43px;
+  padding-left: 2.6875rem;
+  width: 47%;
+}
+@media screen and (min-width: 768px) {
+  .contact-consult__right {
+    padding-left: 13.1rem;
+  }
+}
+
+.contact__btm.contact-consult {
+  border-top: 2px solid #B9B9B9;
+  border-top: 0.125rem solid #B9B9B9;
+  padding-top: 25px;
+  padding-top: 1.5625rem;
+  padding-bottom: 25px;
+  padding-bottom: 1.5625rem;
+  border-bottom: 2px solid #B9B9B9;
+  border-bottom: 0.125rem solid #B9B9B9;
+}
+@media screen and (min-width: 768px) {
+  .contact__btm.contact-consult {
+    padding-top: 2.125rem;
+    padding-bottom: 2.125rem;
+  }
+}
+
+.contact-consult__nakami {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  padding-right: 10px;
+  padding-right: 0.625rem;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .contact-consult__nakami {
+    font-size: 1rem;
+    padding-right: 5.8125rem;
+  }
+}
+
+.contact__top {
+  padding-top: 40px;
+  padding-top: 2.5rem;
+  border-top: 2px solid #B9B9B9;
+  border-top: 0.125rem solid #B9B9B9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 180px;
+}
+
+.footer {
+  background: #000;
+  padding: 42px 0 46px;
+  padding: 2.625rem 0 2.875rem;
+}
+
+.footer__inner {
+  text-align: right;
+}
+
+.footer__inner small {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__inner small {
+    font-size: 1rem;
+  }
+}
+
+.header {
+  border-top: 7px solid #009E44;
+  border-top: 0.4375rem solid #009E44;
+  -o-border-image: linear-gradient(to right, #009E44 0%, #0F9643 25%, #D73635 50%, rgba(54, 102, 163, 0.45882) 75%, #266AAD 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#009E44), color-stop(25%, #0F9643), color-stop(50%, #D73635), color-stop(75%, rgba(54, 102, 163, 0.45882)), to(#266AAD));
+     border-image: linear-gradient(to right, #009E44 0%, #0F9643 25%, #D73635 50%, rgba(54, 102, 163, 0.45882) 75%, #266AAD 100%);
+  border-image-slice: 1;
+  padding-bottom: 31px;
+  padding-bottom: 1.9375rem;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+}
+
+.header__box img {
+  max-width: 170px;
+  max-width: 10.625rem;
+}
+@media screen and (min-width: 768px) {
+  .header__box img {
+    max-width: 16.25rem;
+  }
+}
+
+.header__txt {
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 1.8;
+  height: 19px;
+  height: 1.1875rem;
+  padding-left: 18px;
+  padding-left: 1.125rem;
+  padding-top: 14.08px;
+  padding-top: 0.88rem;
+  letter-spacing: 0.03em;
+}
+
+.l-inner {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 700px;
+  max-width: 43.75rem;
+  width: 100%;
+  padding: 0 30px;
+  padding: 0 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .l-inner {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    max-width: 73.75rem;
+    width: 100%;
+    padding: 0 5.625rem;
+  }
+}
+
+.main__inner {
+  margin: 0 auto;
+  padding: 0 30px;
+  padding: 0 1.875rem;
+  max-width: 1360px;
+  max-width: 85rem;
+}
+@media screen and (min-width: 768px) {
+  .main__inner {
+    padding: 0 5.625rem;
+  }
+}
+
+body {
+  font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", "Meiryo", "ＭＳ ゴシック", sans-serif;
+}
+
+.js-scroll-fadein {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+.js-scroll-fadein.is-fadein {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------
+  arrow
+--------------------------------*/
+.arrow {
+  position: fixed;
+  right: 0;
+  bottom: 120px;
+  bottom: 7.5rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: #666666;
+  border-radius: 50%;
+  padding: 32px 15px 12px 17px;
+  padding: 2rem 0.9375rem 0.75rem 1.0625rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .arrow {
+    right: 5.3125rem;
+  }
+}
+.arrow:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .5);
+          box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .5);
+}
+.arrow:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  left: 25px;
+}
+.arrow:before {
+  top: 14px;
+}
+
+.main {
+  padding: 57px 0 80px;
+  padding: 3.5625rem 0 5rem;
+  border-top: 3px solid #B9B9B9;
+  border-top: 0.1875rem solid #B9B9B9;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 3.75rem 0 6.25rem;
+  }
+}
+
+.main-img__box img {
+  width: 100%;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+}
+@media screen and (min-width: 768px) {
+  .main-img__box img {
+    padding-bottom: 3.9375rem;
+  }
+}
+
+.main__ttl {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .main__ttl {
+    font-size: 2rem;
+  }
+}
+
+.main__subttl {
+  padding-top: 25px;
+  padding-top: 1.5625rem;
+  padding-bottom: 35px;
+  padding-bottom: 2.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .main__subttl {
+    padding-top: 2.375rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+.main__subttl p {
+  display: inline-block;
+  font-weight: bold;
+  border-left: 4px solid #266AAD;
+  border-left: 0.25rem solid #266AAD;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  margin-top: 5px;
+  margin-top: 0.3125rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .main__subttl p {
+    font-size: 1.5rem;
+    padding-left: 1.125rem;
+  }
+}
+
+.main__subttl2 {
+  padding-top: 22px !important;
+  padding-top: 1.375rem !important;
+  padding-bottom: 20px !important;
+  padding-bottom: 1.25rem !important;
+}
+/*# sourceMappingURL=styles.css.map */

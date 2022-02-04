@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.header{
+    border-top: rem(7) solid #009E44;
+    border-image: linear-gradient(to right, #009E44 0%, #0F9643 25%, #D73635 50%,#3666A375 75%, #266AAD 100%);
+    border-image-slice:1;
+    padding-bottom: rem(31);
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    padding-top: rem(24);
+}
+.header__box img {
+    max-width: rem(170);
+@include mq ("md"){
+    max-width: rem(260);
+}
+}
+
+.header__txt{
+    font-size: rem(10);
+    line-height: 1.8;
+    height: rem(19);
+    padding-left: rem(18);
+    padding-top: 0.88rem;
+    letter-spacing: 0.03em;
+}
+
+
+

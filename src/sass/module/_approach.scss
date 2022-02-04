@@ -1,0 +1,68 @@
+@use "global" as *;
+
+
+.approach__lists{
+  list-style: none;
+  padding-top: rem(20);
+  @include mq("md"){
+    padding-top: rem(37);
+  }
+}
+
+
+.main__inner small{
+  color: white;
+}
+
+.approach__list-number{
+  background-color: #333333;
+  border-radius: 50%;
+  color: white;
+  padding: rem(3) rem(10);
+  font-weight: bold;
+  margin-right: rem(5);
+  font-size: rem(12);
+  @include mq("md"){
+    font-size: rem(16);
+    margin-right: rem(24);
+  }
+}
+
+.approach__ttl{
+  font-size: rem(20);
+  border-bottom: rem(3) solid #B9B9B9;
+  padding-bottom: rem(10);
+  padding-top: rem(40);
+  @include mq("md"){
+    padding-bottom: rem(20);
+    padding-top: rem(49);
+  }
+}
+
+
+.approach__description{
+  padding-top: rem(25);
+  line-height: 1.7;
+  @include mq("md"){
+    padding-top: rem(25);
+    line-height: 2;
+    padding-bottom: rem(30);
+  }
+}
+
+
+
+  .approach__ttl p{
+  line-height: 1.6;
+}
+
+.approach__list{
+  font-size: rem(12);
+  padding-bottom: rem(10);
+  line-height: 2;
+  @include mq("md"){
+    padding-bottom: rem(24);
+    font-size: rem(16);
+  }
+}
+
